@@ -12,7 +12,7 @@ import icon8 from "../assets/corel.png";
 
 const About = () => {
   return (
-    <div className=" bg-[#395B64] flex flex-col lg:flex-col mx-auto pt-5 items-center h-auto p-4">
+    <div className="bg-[#395B64] flex flex-col lg:flex-col mx-auto pt-5 items-center h-auto p-4">
       <div className="flex items-start w-full">
         <img src={icon} className="h-8 w-8 mr-3" />
         <h1 className="text-2xl text-white">About</h1>
@@ -73,14 +73,38 @@ const About = () => {
       </div>
 
       <div className="flex flex-wrap gap-4 justify-center w-full my-2">
-        <img src={icon1} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon2} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon3} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon4} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon5} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon6} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon7} className="lg:h-14 lg:w-14 h-10 w-10" />
-        <img src={icon8} className="lg:h-14 lg:w-14 h-10 w-10" />
+        <img
+          src={icon1}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon2}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon3}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon4}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon5}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon6}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon7}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
+        <img
+          src={icon8}
+          className="transform transition-transform duration-300 hover:scale-110 lg:h-14 lg:w-14 h-10 w-10"
+        />
       </div>
     </div>
   );

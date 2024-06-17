@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,15 +10,16 @@ function Header() {
   };
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
   };
 
   return (
     <div className="font-poppins">
-      <nav className="flex flex-wrap items-center justify-between mx-auto py-6 bg-[#2C3333]">
+      <nav className="flex flex-wrap items-center justify-between mx-auto py-6 bg-[#2C3333] z-50">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -32,7 +32,7 @@ function Header() {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-[#5268FF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-[#5268FF] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 xs:px-2 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Download CV
           </button>

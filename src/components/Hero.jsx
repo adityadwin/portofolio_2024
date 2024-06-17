@@ -1,15 +1,17 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import images from "../constans/images";
 import { Link } from "react-router-dom";
+import { animateScroll as scroller } from "react-scroll";
 
 const Hero = () => {
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
   };
+
   return (
     <div className="lg:min-h-[85vh] min-h-[65vh] bg-[#2C3333] flex flex-col font-poppins">
       <div className="items-center justify-center flex pt-16">
