@@ -1,7 +1,6 @@
 import React from "react";
 import images from "../constans/images";
-import { Link } from "react-router-dom";
-import { animateScroll as scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -15,10 +14,11 @@ const Hero = () => {
   return (
     <div className="lg:min-h-[85vh] min-h-[65vh] bg-[#2C3333] flex flex-col font-poppins">
       <div className="items-center justify-center flex pt-16">
-        <div class="shrink-0">
+        <div className="shrink-0">
           <img
-            class="h-[250px] w-[250px] dark:w-[200px] dark:h-[200px] object-cover rounded-full"
+            className="h-[250px] w-[250px] dark:w-[200px] dark:h-[200px] object-cover rounded-full"
             src={images.Profile}
+            alt="Profile"
           />
         </div>
       </div>
@@ -35,10 +35,11 @@ const Hero = () => {
         </p>
       </div>
       <div className="bg-[#2C3333] pb-10 pt-4 items-center justify-center flex ">
-        <button className="bg-gray-500 rounded-xl py-1 px-1 text-xl dark:text-lg font-medium text-white w-[50%] lg:w-[21%]">
-          <Link to="/about" onClick={() => scrollToSection("about")}>
-            More about me
-          </Link>
+        <button
+          className="bg-gray-500 rounded-xl py-1 px-1 text-xl dark:text-lg font-medium text-white w-[50%] lg:w-[21%]"
+          onClick={() => scrollToSection("about")}
+        >
+          More about me
         </button>
       </div>
     </div>
