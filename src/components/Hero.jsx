@@ -12,35 +12,41 @@ const Hero = () => {
   };
 
   return (
-    <div className="lg:min-h-[85vh] min-h-[65vh] bg-[#2C3333] flex flex-col font-poppins">
-      <div className="items-center justify-center flex pt-16">
-        <div className="shrink-0">
-          <img
-            className="h-[250px] w-[250px] dark:w-[200px] dark:h-[200px] object-cover rounded-full"
-            src={images.Profile}
-            alt="Profile"
-          />
-        </div>
-      </div>
-      <div className="bg-[#2C3333] p-4 items-center justify-center flex">
-        <h1 className="text-4xl dark:text-3xl font-semibold text-white text-center">
-          Hi, Nice to meet you <br /> I'm Aditya
+    <div className="lg:min-h-[85vh] min-h-[65vh] bg-[#2C3333] flex flex-row items-center justify-center font-poppins">
+      {/* Left Section (Text) */}
+      <div className="flex flex-col lg:w-1/2 w-full p-6 lg:pl-8 space-y-6">
+        <h1 className="text-4xl dark:text-6xl font-semibold text-white text-left">
+          Hi, Nice to meet you 👋
+          <br />
         </h1>
-      </div>
-      <div className="bg-[#2C3333] h-1/5 items-center justify-center flex ">
-        <p className=" lg:w-[65%] dark:text-lg text-lg lg:text-xl text-center text-white">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.
+        <span className="text-4xl dark:text-6xl font-semibold text-white text-left underline underline-offset-8 decoration-[#8fa8df]">
+          I'm Aditya
+        </span>
+        <p className="lg:text-lg text-white text-justify">
+          Lulusan Sarjana dari Universitas AKI Semarang dalam bidang Teknik
+          Informatika, juga memiliki minat yang kuat sebagai Frontend Developer,
+          berpengalaman dalam HTML, CSS, JavaScript, dan ReactJS untuk membuat
+          website yang menarik. Berorientasi pada pemecahan masalah, kreatif,
+          dan berdedikasi menciptakan antarmuka pengguna yang responsif dan
+          optimal.
         </p>
-      </div>
-      <div className="bg-[#2C3333] pb-10 pt-4 items-center justify-center flex ">
         <button
-          className="bg-gray-500 rounded-xl py-1 px-1 text-xl dark:text-lg font-medium text-white w-[50%] lg:w-[21%]"
+          className="rounded-xl text-xl dark:text-lg font-medium text-white text-start"
           onClick={() => scrollToSection("about")}
         >
-          More about me
+          About me
+          <div className="w-40 h-2 bg-green-500 rounded-full"></div>
+          <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
         </button>
+      </div>
+
+      {/* Right Section (Image) */}
+      <div className="lg:w-1/2 w-full flex justify-center ml-28 ">
+        <img
+          className="p-2 h-[400px] w-[400px] lg:h-[500px] lg:w-[500px] rounded-full mb-24"
+          src={images.Profile}
+          alt="Profile"
+        />
       </div>
     </div>
   );

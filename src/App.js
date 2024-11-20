@@ -16,12 +16,12 @@ function App() {
         <div id="hero" className="max-w-7xl mx-auto pt-24">
           <Hero />
         </div>
-        <div id="about" className="min-w-7xl bg-[#395B64] pt-24">
+        <div id="about" className="min-w-7xl bg-[#395B64] pt-12">
           <div className="max-w-7xl mx-auto pb-4">
             <About />
           </div>
         </div>
-        <div id="projects" className="min-w-7xl bg-[#22C3333] pt-24">
+        <div id="projects" className="min-w-7xl bg-[#22C3333] pt-20">
           <div className="max-w-7xl mx-auto">
             <Projects />
           </div>

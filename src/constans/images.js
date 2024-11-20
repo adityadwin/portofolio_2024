@@ -1,4 +1,4 @@
-import Profile from "../assets/profile.png";
+import Profile from "../assets/Me.png";
 
 const images = {
   Profile,

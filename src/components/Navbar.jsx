@@ -25,8 +25,8 @@ function Header() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => scrollToSection("hero")}
         >
-          <span className="self-center lg:text-3xl text-lg font-light whitespace-nowrap dark:text-white">
-            PROTOFOLIO
+          <span className="self-center lg:text-3xl text-lg font-light whitespace-nowrap dark:text-white -rotate-2 underline underline-offset-8 decoration-[#8fa8df]">
+            PORTOFOLIO
           </span>
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
