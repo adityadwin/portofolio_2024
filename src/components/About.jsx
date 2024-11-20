@@ -62,21 +62,21 @@ const About = () => {
       >
         {currentView === "Education" && (
           <div className="flex flex-col w-max">
-            <ul className="text-sm lg:text-lg my-4 text-white list-disc pl-5 ml-8 lg:text-xl">
+            <ul className="text-sm lg:text-lg my-4 text-white list-disc">
               <li>
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-base lg:text-xl font-semibold">
                   Universitas AKI Semarang
-                  <p className="text-lg font-light">(2020 - 2024)</p>
+                  <p className="text-base font-light">(2020 - 2024)</p>
                 </h2>
                 <p className="flex lg:gap-x-4 gap-x-2 text-sm lg:text-lg font-normal">
                   S1 Teknik Informatika
-                  <p className="text-lg font-light">IPK 3.47/4.00</p>
+                  <p className="text-sm font-light">IPK 3.47/4.00</p>
                 </p>
               </li>
               <li>
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-base lg:text-xl font-semibold">
                   SMKS Garuda Nusantara
-                  <p className="text-lg font-light">(2017 - 2020)</p>
+                  <p className="text-base font-light">(2017 - 2020)</p>
                 </h2>
                 <p className="flex lg:gap-x-4 gap-x-2 text-sm lg:text-lgfont-normal">
                   Teknik Komputer & Jaringan
