@@ -15,11 +15,11 @@ const Hero = () => {
     <div className="lg:min-h-[85vh] min-h-[65vh] bg-[#2C3333] flex flex-row items-center justify-center font-poppins">
       {/* Left Section (Text) */}
       <div className="flex flex-col lg:w-1/2 w-full p-6 lg:pl-8 space-y-6">
-        <h1 className="text-4xl dark:text-6xl font-semibold text-white text-left">
+        <h1 className="text-5xl lg:text-6xl font-semibold text-white text-left">
           Hi, Nice to meet you 👋
           <br />
         </h1>
-        <span className="text-4xl dark:text-6xl font-semibold text-white text-left underline underline-offset-8 decoration-[#8fa8df]">
+        <span className="text-5xl lg:text-6xl font-semibold text-white text-left underline underline-offset-8 decoration-[#8fa8df]">
           I'm Aditya
         </span>
         <p className="lg:text-lg text-white text-justify">
@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
       {/* Right Section (Image) */}
-      <div className="lg:w-1/2 w-full flex justify-center ml-28 ">
+      <div className="lg:w-1/2 w-full flex justify-center ml-28 hidden lg:flex">
         <img
           className="p-2 h-[400px] w-[400px] lg:h-[500px] lg:w-[500px] rounded-full mb-24"
           src={images.Profile}

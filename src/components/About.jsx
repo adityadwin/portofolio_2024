@@ -26,8 +26,8 @@ const About = () => {
   }, [selectedView, currentView]);
 
   return (
-    <div className="bg-[#395B64] flex flex-col lg:flex-col mx-auto items-center h-auto p-4">
-      <div className="flex items-start w-full ">
+    <div className="bg-[#395B64] flex flex-col lg:flex-col mx-auto items-center h-auto p-4 w-full">
+      <div className="flex items-start w-full">
         <img src={icon} alt="project" className="h-8 w-8 mr-3" />
         <h1 className="text-2xl text-white">About Me</h1>
       </div>
@@ -62,23 +62,23 @@ const About = () => {
       >
         {currentView === "Education" && (
           <div className="flex flex-col w-max">
-            <ul className="text-lg my-4 text-white list-disc pl-5 ml-8 lg:text-xl">
+            <ul className="text-sm lg:text-lg my-4 text-white list-disc pl-5 ml-8 lg:text-xl">
               <li>
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
                   Universitas AKI Semarang
                   <p className="text-lg font-light">(2020 - 2024)</p>
                 </h2>
-                <p className="flex lg:gap-x-4 gap-x-2 text-lg font-normal">
+                <p className="flex lg:gap-x-4 gap-x-2 text-sm lg:text-lg font-normal">
                   S1 Teknik Informatika
                   <p className="text-lg font-light">IPK 3.47/4.00</p>
                 </p>
               </li>
               <li>
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
                   SMKS Garuda Nusantara
                   <p className="text-lg font-light">(2017 - 2020)</p>
                 </h2>
-                <p className="flex lg:gap-x-4 gap-x-2 text-lg font-normal">
+                <p className="flex lg:gap-x-4 gap-x-2 text-sm lg:text-lgfont-normal">
                   Teknik Komputer & Jaringan
                 </p>
               </li>
@@ -88,20 +88,20 @@ const About = () => {
 
         {currentView === "Experience" && (
           <div className="flex flex-col w-full">
-            <ul className="text-xl my-4 text-white list-disc pl-5 ml-8">
+            <ul className="text-xl my-4 text-white list-disc ml-4">
               <li>
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
                   Kodepedia Matari Studio
                   <p className="text-lg font-light">| Magang</p>
                 </h2>
-                <p className="text-lg font-normal">
+                <p className="text-base font-normal">
                   Mentor (Agustus 2023 – September 2023)
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     1. Sukses menyampaikan materi CorelDraw kepada dua orang
                     peserta kursus untuk membuat sebuah desain sederhana dalam
                     sekali pertemuan.
                   </p>
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     2. Membantu membuat rancangan UML diagram pada projek
                     website E-Learning guna meningkatkan pembelajaran peserta
                     kursus.
@@ -109,17 +109,17 @@ const About = () => {
                 </p>
               </li>
               <li className="mt-4">
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
                   PT Ruang Raya Indonesia
                   <p className="text-lg font-light">| Studi Independen</p>
                 </h2>
-                <p className="text-lg font-normal">
+                <p className="text-base font-normal">
                   Frontend Engineering (Agustus 2022 – Desember 2022)
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     1. Menyelesaikan sebanyak 35 pesanan pelanggan dengan
                     mendapatkan total rating 4.9/5.0.
                   </p>
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     2. Sukses menyelesaikan pesanan dari satu pelanggan dengan
                     total 19 desain yang berbeda dan mampu menyelesaikannya
                     dalam waktu 4 hari.
@@ -128,26 +128,26 @@ const About = () => {
               </li>
 
               <li className="mt-4">
-                <h2 className="flex lg:gap-x-4 gap-x-2 text-xl font-semibold">
+                <h2 className="flex lg:gap-x-4 gap-x-2 text-lg lg:text-xl font-semibold">
                   Freelance
                 </h2>
-                <p className="text-lg font-normal">
+                <p className="text-base font-normal">
                   Graphic Designer & Digital Product (2021 - Saat ini)
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     1. Memahami mengenai Git version control untuk mengatur
                     setiap revisi di projeknya, dimulai dari menginisiasi sebuah
                     projek, melakukan commit, rollback sebuah commit.
                   </p>
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     2. Memahami konsep pemrograman, syntax, dan fitur yang
                     terdapat pada bahasa pemrograman JavaScript.
                   </p>
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     3. Belajar konsep-konsep fundamental pada library ReactJS
                     seperti JSX, Component, Props, State, LifeCycle, Handling
                     Event.
                   </p>
-                  <p className="text-lg font-light">
+                  <p className="text-sm font-light">
                     4. Belajar untuk memahami konsep arsitektur RESTful API dan
                     menerapkannya dalam pengembangan website di sisi Frontend
                     Development.
